@@ -164,7 +164,7 @@ namespace Common
         }
         public static bool OperateLoger(string LineContent)
         {
-            bool result = WriteLogNtimes(LineContent, LoggerMode.INFO);  //修改为强行加入LoggerMode.INFO
+            bool result = WriteLogNtimes(LineContent, LoggerMode.INFO); 
             return result;
         } 
         public static void OperateDateLoger(string LoggerLineContent, object objData)
@@ -186,12 +186,12 @@ namespace Common
         #region  Date Loger
         public static bool OperateDateLoger(string LineContent)
         {
-            bool result = WriteLogNtimes(LineContent, LoggerMode.INFO);  //修改为强行加入LoggerMode.INFO
+            bool result = WriteLogNtimes(LineContent, LoggerMode.INFO);  
             return result;
         }
         public static bool OperateDateLoger(string LineContent,LoggerMode loggerMode)
         {
-            bool result = WriteLogNtimes(LineContent, loggerMode);  //修改为强行加入LoggerMode.INFO
+            bool result = WriteLogNtimes(LineContent, loggerMode); 
             return result;
         }
         public static bool EntryImageLoger(string LineEntryImage)
