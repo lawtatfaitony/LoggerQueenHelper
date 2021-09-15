@@ -57,7 +57,7 @@ namespace Common
                 string filename = CheckLogFile(logger.loggerMode,500); 
                 string pathFilename = Path.Combine(filePath, filename);
                  
-                ReaderWriterLockSlim readerWriterLockSlim = new ReaderWriterLockSlim(); //ref:https://www.cnblogs.com/tianma3798/p/8252553.html
+                ReaderWriterLockSlim readerWriterLockSlim = new ReaderWriterLockSlim();
                 try
                 {
                     readerWriterLockSlim.EnterWriteLock();
@@ -184,10 +184,10 @@ namespace Common
         }
 
         /// <summary>
-        /// 检查log文件
+        /// Check the log file
         /// </summary>
         /// <param name="loggerMode"></param>
-        /// <param name="fileMaxSize">建议500 单位Kb</param>
+        /// <param name="fileMaxSize">Recommended 500 units Kb</param>
         /// <returns></returns>
         public static string CheckLogFile(LoggerMode loggerMode,long fileMaxSize)
         {
